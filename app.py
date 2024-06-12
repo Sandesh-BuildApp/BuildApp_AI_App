@@ -8,7 +8,6 @@ import ast
 import os
 from keyManageUtils import read_file, draw_graph_floorwise, modify_colors
 
-
 import json
 import open3d as o3d
 import numpy as np
@@ -34,8 +33,6 @@ app.config['SECRET_KEY'] = 'dfgtesa345Oljyfu0O'
 # app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'  # Protect against CSRF attacks by setting SameSite attribute
 
 db = SQLAlchemy(app)
-
-
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
